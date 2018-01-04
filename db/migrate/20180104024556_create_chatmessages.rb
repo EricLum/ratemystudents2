@@ -3,7 +3,7 @@ class CreateChatmessages < ActiveRecord::Migration[5.1]
     create_table :chatmessages do |t|
       t.integer :chatboard_id
       t.integer :user_id
-      t.message :description
+      t.string :message
       t.timestamps
     end
   end
